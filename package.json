@@ -1,11 +1,15 @@
 {
-  "name": "@odnh/use-keypress",
+  "name": "@odnh/use-key-press",
   "version": "0.0.1",
   "description": "react hook useKeyPress",
   "keywords": [
     "react",
     "react hook",
+    "use",
     "key",
+    "press",
+    "key",
+    "code",
     "key code",
     "pressing key codes"
   ],
