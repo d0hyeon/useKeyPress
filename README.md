@@ -20,6 +20,7 @@ npm install @odnh/use-keypress
 |selector|`EventKey`|`code`|key event property selector(recommend `code` and `key`) [detail](https://developer.mozilla.org/ko/docs/Web/API/KeyboardEvent)|
 |target|`HTMLElement` or `React.MutableRefObject`|`body`|event target element|
 <br/>
+
 ```ts
 type EventKey = 'code' | 'keyCode' | 'key' | 'which';
 ```
