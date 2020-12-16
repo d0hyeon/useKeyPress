@@ -30,6 +30,9 @@ type EventKey = 'code' | 'keyCode' | 'key' | 'which';
 `(string | number)[]`
 
 ## Example
+
+[demo](https://codesandbox.io/s/usekeypress-4pk5m)
+
 ```tsx
 import React from 'react';
 import {useKeyPress} from '@odnh/use-keypress';
