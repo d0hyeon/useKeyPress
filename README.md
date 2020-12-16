@@ -17,7 +17,7 @@ npm install @odnh/use-keypress
 ### parameters 
 |Name|Type|defaultValue|description|
 |-----|-------|----|-------------------------|
-|selector|`EventKey`|`code`|key event property selector(recommend `code` and `key`) [detail](https://developer.mozilla.org/ko/docs/Web/API/KeyboardEvent)|
+|selector|`EventKey`|`code`|key name of KeyboardEvent properties (recommend `code` and `key`) [detail](https://developer.mozilla.org/ko/docs/Web/API/KeyboardEvent)|
 |target|`HTMLElement` or `React.MutableRefObject`|`body`|event target element|
 <br/>
 
