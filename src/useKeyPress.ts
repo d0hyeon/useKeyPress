@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistoryState } from '@odnh/use-history-state';
 
 export type Target<T> = HTMLElement | React.MutableRefObject<T>;
 export type EventKey = 'code' | 'keyCode' | 'key' | 'which';
@@ -9,22 +8,22 @@ export const useKeyPress = <T = HTMLElement>(
   target?: Target<T>,
 ): string[] => {
   const eventSelector = selector ?? 'code';
-  const [
-    keyCode,
-    setKeyCode,
-    { histories, deleteItem },
-  ] = useHistoryState<string>('');
+  const [keyCodes, setKeyCodes] = React.useState([]);
 
   const onKeyDown = React.useCallback(
     (event) => {
-      setKeyCode(event[eventSelector]);
+      setKeyCodes(prev => ([
+        ...prev,
+        event[eventSelector]
+      ]))
     },
     [eventSelector],
   );
 
   const onKeyUp = React.useCallback(
     (event) => {
-      deleteItem(event[eventSelector]);
+      const keyValue = event[eventSelector];
+      setKeyCodes(prev => prev.filter(code => code !== keyValue));
     },
     [eventSelector],
   );
@@ -46,6 +45,6 @@ export const useKeyPress = <T = HTMLElement>(
   }, [target]);
 
   return React.useMemo(() => {
-    return histories;
-  }, [keyCode]);
+    return [...new Set(keyCodes)];
+  }, [keyCodes]);
 };
