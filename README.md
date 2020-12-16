@@ -27,7 +27,7 @@ type EventKey = 'code' | 'keyCode' | 'key' | 'which';
 
 ---
 ### returns
-`EventKey[]`
+`string | number[]`
 
 
 ## Example
