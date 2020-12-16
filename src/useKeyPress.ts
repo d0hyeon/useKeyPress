@@ -19,14 +19,14 @@ export const useKeyPress = <T = HTMLElement>(
     (event) => {
       setKeyCode(event[eventSelector]);
     },
-    [eventSelector, keyCode, histories],
+    [eventSelector],
   );
 
   const onKeyUp = React.useCallback(
     (event) => {
       deleteItem(event[eventSelector]);
     },
-    [eventSelector, histories],
+    [eventSelector],
   );
 
   React.useLayoutEffect(() => {
