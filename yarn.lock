@@ -814,13 +814,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@odnh/use-history-state@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@odnh/use-history-state/-/use-history-state-0.0.7.tgz#8332c9f1ad4ab7782662e8931f93dbc8acbad8e2"
-  integrity sha512-hoTTPWLyhUbARGlDMjVcquuHU2TRLJAxGQn76SK7+mfLYlk97O/zO5gHFjzjZIM2xwg9aiBYCNK6IeTkJI7XFA==
-  dependencies:
-    react-is "^17.0.1"
-
 "@rollup/plugin-babel@^5.2.1":
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.2.2.tgz#e5623a01dd8e37e004ba87f2de218c611727d9b2"

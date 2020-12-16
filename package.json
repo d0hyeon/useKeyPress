@@ -29,7 +29,6 @@
     "email": "ehgus6887@gmail.com"
   },
   "dependencies": {
-    "@odnh/use-history-state": "^0.0.7",
     "react-is": "^17.0.1"
   },
   "peerDependencies": {
