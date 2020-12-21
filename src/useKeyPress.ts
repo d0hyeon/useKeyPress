@@ -1,7 +1,7 @@
 import React from 'react';
 
 export type Target<T> = HTMLElement | React.MutableRefObject<T>;
-export type EventKey = 'code' | 'keyCode' | 'key' | 'which';
+export type EventKey = keyof Pick<KeyboardEvent, 'code' | 'key' | 'keyCode' | 'which'>;
 
 export const useKeyPress = <T = HTMLElement>(
   selector?: EventKey,
