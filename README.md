@@ -11,7 +11,7 @@ npm install @odnh/use-keypress
 
 ## Use
 ```tsx
-  useKeyPress(selector?: Selector, target?: Target) => Selector[];
+  useKeyPress(selector?: Selector, target?: Target) => (string | number)[];
 ```
 
 ### parameters 
