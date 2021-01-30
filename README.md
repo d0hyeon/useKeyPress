@@ -44,7 +44,7 @@ const App = () => {
   const pressingCodes = useKeyPress();
   const nextSentence = React.useCallback(() => {
     setSentenceIndex(prev => prev+1);
-  }, []);
+  }, [setSentenceIndex]);
   React.useEffect(() => {
     if(
       pressingCodes.includes('ControlLeft') &&
@@ -54,7 +54,7 @@ const App = () => {
         ));
       }
     )
-  }, [pressingCodes])
+  }, [pressingCodes, setSentenceIndex])
 
   return (
     <>
